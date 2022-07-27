@@ -8,7 +8,7 @@ const Navbar = () => {
           <img src="" alt="logo" />
         </div>
         {/* Menu Items */}
-        <div className="hidden md:flex space-x-10">
+        <div className="hidden space-x-10 md:flex">
           <a href="/" className="hover:text-darkGrayishBlue">
             Pricing
           </a>
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <a
           href="/"
-          className="hidden md:block p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+          className="hidden  p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
         >
           Get Started
         </a>
