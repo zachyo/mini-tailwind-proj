@@ -16,23 +16,33 @@ const Features = () => {
       </div>
       <div className="flex flex-col justify-start space-y-8 md:w-1/2">
         {/* List Item */}
-        <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6">
-          {/* <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+        <div className="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent">
             <div className="flex items-center space-x-4">
-              <div className="rounded-full text-white py-4 px-6 bg-brightRed md:py-1">01</div>
-              <h3 className="font-bold md:mb-4 pr-9">Track company-wide progress</h3>
+              <div className="rounded-full text-white py-4 px-6 bg-brightRed md:py-1">
+                01
+              </div>
+              <h3 className="font-bold md:mb-4 pr-9 md:hidden">
+                Track company-wide progress
+              </h3>
             </div>
-          </div> */}
+          </div>
+          <h3 className="hidden font-bold text-lg mb-4 md:block ">
+            Track company-wide progress
+          </h3>
 
-          <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
+          {/* <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
             <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
               01
             </div>
-            <h3 className="font-bold md:mb-4 pr-9 md:text-base">
+            <h3 className="font-bold md:mb-4 pr-9 md:text-base md:hidden">
               Track company-wide progress
             </h3>
-          </div>
-          <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
+            <h3 className="hidden font-bold text-lg mb-4 md:block ">
+              Track company-wide progress
+            </h3>
+          </div> */}
+          {/* <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
             <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
               02
             </div>
@@ -47,7 +57,7 @@ const Features = () => {
             <h3 className="font-bold md:mb-4 pr-9 md:text-base">
               Track company-wide progress
             </h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
