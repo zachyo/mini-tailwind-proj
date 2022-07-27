@@ -23,13 +23,30 @@ const Features = () => {
               <h3 className="font-bold md:mb-4 pr-9">Track company-wide progress</h3>
             </div>
           </div> */}
+
           <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
-              <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
-                01
-              </div>
-              <h3 className="font-bold md:mb-4 pr-9 md:text-base">
-                Track company-wide progress
-              </h3>
+            <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
+              01
+            </div>
+            <h3 className="font-bold md:mb-4 pr-9 md:text-base">
+              Track company-wide progress
+            </h3>
+          </div>
+          <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
+            <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
+              02
+            </div>
+            <h3 className="font-bold md:mb-4 pr-9 md:text-base">
+              Track company-wide progress
+            </h3>
+          </div>
+          <div className="rounded-l-full bg-brightRedSupLight md:bg-transparent flex items-center space-x-4">
+            <div className="rounded-full text-white py-2 px-4 bg-brightRed md:py-1">
+              03
+            </div>
+            <h3 className="font-bold md:mb-4 pr-9 md:text-base">
+              Track company-wide progress
+            </h3>
           </div>
         </div>
       </div>
