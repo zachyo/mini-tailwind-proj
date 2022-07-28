@@ -9,24 +9,48 @@
   background-repeat: no-repeat;
   background-position: -60% 975%;
 }
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all .25s;
+}
 
-.harmburger-top,
-.harmburger-middle,
-.harmburger-btm {
+.hamburger-top,
+.hamburger-middle,
+.hamburger-btm {
   position: absolute;
   top: 0;
   right: 0;
   width: 24px;
   height: 2px;
   background-color: #000;
+  transform: rotate(0);
+  transition: all .5s;
 }
-.harmburger-middle {
-  transform: translateX(7px);
+.hamburger-middle {
+  transform: translateY(7px);
 }
-.harmburger-btm {
-  transform: translateX(14px);
+.hamburger-btm {
+  transform: translateY(14px);
 }
+/* .open {
+  transform: rotate(90deg) translateY(0px);
+} */
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-top {
+  transform: translateY(7px) rotate(45deg);
 
+}
+.open .hamburger-btm {
+  transform: translateY(7px) rotate(-45deg);
+}
+.menu {
+  transition: ease-in all 3s;
+}
 
 @media (max-width:576px) {
   .App {

@@ -1,6 +1,20 @@
-import logo from './img/logo.svg'
+import { useState } from "react";
+import logo from "./img/logo.svg";
 
 const Navbar = () => {
+  // const btn = document.getElementsById('menu-btn')
+  const [className, SetClassName] = useState("hamburger block md:hidden");
+  const [menu, SetMenu] = useState("hidden");
+  const change = (className) => {
+    if (className === "hamburger block md:hidden") {
+      SetClassName("open hamburger block md:hidden");
+      SetMenu("");
+      console.log(className);
+    } else {
+      SetClassName("hamburger block md:hidden");
+      SetMenu("hidden");
+    }
+  };
   return (
     <nav className="relative container mx-auto p-4">
       {/* Flex Container  */}
@@ -35,20 +49,30 @@ const Navbar = () => {
         </a>
 
         {/* Hamburger */}
-        <button id="menu-btn" className="block harmburger md:hidden">
-          <span className="harmburger-top"></span>
-          <span className="harmburger-middle"></span>
-          <span className="harmburger-btm"></span>
+        <button
+          id="menu-btn"
+          className={className}
+          onClick={() => {
+            change(className);
+          }}
+        >
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-btm"></span>
         </button>
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden">
+      <div className={menu}>
         <div
           id="menu"
           className="absolute flex flex-col items-center self-end py-8 mt-2 space-y-6 font-bold bg-white left-6 right-6 drop-shadow-md md:hidden sm:w-auto sm-self-center "
         >
-          <a href="/">Pricing</a><a href="/">Product</a><a href="/">About US</a><a href="/">Careers</a><a href="/">Community</a>
+          <a href="/">Pricing</a>
+          <a href="/">Product</a>
+          <a href="/">About Us</a>
+          <a href="/">Careers</a>
+          <a href="/">Community</a>
         </div>
       </div>
     </nav>
