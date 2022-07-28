@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <section>
+    <section id="features">
       <div className="container flex flex-col px-6 mx-auto md:flex-row ">
         <div className="flex flex-col mb-32 space-y-12 md:w-1/2 md:mb-0">
           <h2 className="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">

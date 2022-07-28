@@ -1,7 +1,9 @@
 import './App.css';
 import Features from './features.component';
+import Footer from './footer.component';
 import Hero from './hero.component';
 import Navbar from './nav.component';
+import Testimonials from './testimonials.component';
 
 function App() {
   return (
@@ -9,9 +11,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <Features/>
-      <header className="App-header">
-        <h1 className='text-5xl'>Hello World</h1>
-      </header>
+      <Testimonials/>
+      <Footer/>
     </div>
   );
 }

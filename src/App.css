@@ -1,5 +1,43 @@
 .App {
   text-align: center;
+  background-image: url('./img/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: 90% -25%;
+}
+#testimonials {
+  background-image: url('./img/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: -60% 975%;
+}
+
+.harmburger-top,
+.harmburger-middle,
+.harmburger-btm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+}
+.harmburger-middle {
+  transform: translateX(7px);
+}
+.harmburger-btm {
+  transform: translateX(14px);
+}
+
+
+@media (max-width:576px) {
+  .App {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+  #testimonials {
+  background-position: 90px 35%;
+  background-size: 500px;
+
+  }
 }
 
 .App-logo {
